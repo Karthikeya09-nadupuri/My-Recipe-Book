@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <link rel="stylesheet" href="k.css">
+    <script src="k.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+        <input type="text" id="search" placeholder="Search for recipes...">
+        <nav>
+            <ul>
+                <li><a href="appettizers.html">Appetizers</a></li>
+                <li><a href="maincourse.html">Main Courses</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipe-categories">
+            <div class="recipe-card" data-page="appettizers.html">
+                <h2>Appetizers</h2>
+                <div class="card-content">
+                    <p class="card-description">Delicious starters to kick off your meal.</p>
+                </div>
+                <div class="card-footer">
+                    <span>3 recipes</span>
+                    <a href="appettizers.html" class="view-recipe">View Recipes</a>
+                </div>
+            </div>
+        
+            <div class="recipe-card" data-page="maincourse.html">
+                <h2>Main Courses</h2>
+                <div class="card-content">
+                    <p class="card-description">Hearty dishes for the main event.</p>
+                </div>
+                <div class="card-footer">
+                    <span>2 recipes</span>
+                    <a href="maincource.html" class="view-recipe">View Recipes</a>
+                </div>
+            </div>
+        
+            <div class="recipe-card" data-page="desserts.html">
+                <h2>Desserts</h2>
+                <div class="card-content">
+                    <p class="card-description">Sweet treats to end your meal perfectly.</p>
+                </div>
+                <div class="card-footer">
+                    <span>2 recipes</span>
+                    <a href="desserts.html" class="view-recipe">View Recipes</a>
+                </div>
+            </div>
+        
+            <div class="recipe-card chocolate-card" data-page="choco.html">
+                <h2>Chocolate Delights</h2>
+                <div class="card-content">
+                    <p class="card-description">Indulgent chocolate recipes for true cocoa lovers.</p>
+                </div>
+                <div class="card-footer">
+                    <span>3 recipes</span>
+                    <a href="choco.html" class="view-recipe">View Recipes</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Recipe Book</p>
+    </footer>
+    <div id="recipe-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <div id="popup-ingredients"></div>
+            <div id="popup-instructions"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Existing styles... */
+
+/* Recipe card styling */
+.recipe {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.recipe h3 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+#recipe-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.recipe-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card h2 {
+    text-align: center;
+    color: #4CAF50;
+    padding: 10px;
+    margin: 0;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Add this to your existing k.css file */
+
+/* Styling for individual recipe pages */
+.recipe {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.recipe h3 {
+    color: #4CAF50;
+    margin-top: 0;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.recipe h4 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.recipe ul {
+    padding-left: 20px;
+}
+
+.recipe li {
+    margin-bottom: 5px;
+}
+
+.recipe p {
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .recipe {
+        padding: 15px;
+    }
+}
+
+/* Header styles for individual recipe pages */
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+/* Enhanced Recipe Card Styling */
+.recipe-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+}
+
+.recipe-card h2 {
+    text-align: center;
+    color: #333;
+    padding: 20px 15px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-card .card-content {
+    padding: 20px;
+}
+
+.recipe-card .card-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.recipe-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+
+.recipe-card .card-footer span {
+    font-size: 12px;
+    color: #888;
+}
+
+.recipe-card .view-recipe {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.recipe-card .view-recipe:hover {
+    background-color: #45a049;
+}
+/* Existing styles... */
+
+/* Chocolate Card Specific Styling */
+.recipe-card.chocolate-card {
+    background-color: #833314;
+    color: #fff;
+}
+
+.recipe-card.chocolate-card::before {
+    background: linear-gradient(to right, #d2691e, #8b4513);
+}
+
+.recipe-card.chocolate-card h2 {
+    color: #d2691e;
+    background-color: #2c1c14;
+}
+
+.recipe-card.chocolate-card .card-content {
+    background-color: #3c2a21;
+}
+
+.recipe-card.chocolate-card .card-description {
+    color: #e6ccb3;
+}
+
+.recipe-card.chocolate-card .card-footer {
+    background-color: #2c1c14;
+    border-top: 1px solid #4a3429;
+}
+
+.recipe-card.chocolate-card .card-footer span {
+    color: #d2691e;
+}
+
+.recipe-card.chocolate-card .view-recipe {
+    background-color: #d2691e;
+    color: #fff;
+}
+
+.recipe-card.chocolate-card .view-recipe:hover {
+    background-color: #8b4513;
+}
+
+/* Hover effect for chocolate card */
+.recipe- Card.chocolate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
